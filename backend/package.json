@@ -1,0 +1,37 @@
+{
+  "name": "smart-voter-slip-backend",
+  "version": "1.0.0",
+  "description": "Smart Voter Slip Printing System - API Server",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "generate-pdf": "node scripts/generateSamplePdf.js"
+  },
+  "keywords": [
+    "voter",
+    "election",
+    "pdf",
+    "express"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "compression": "^1.8.1",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "express-rate-limit": "^8.5.2",
+    "helmet": "^8.2.0",
+    "morgan": "^1.11.0",
+    "pdf-lib": "^1.17.1",
+    "smart-voter-slip": "file:.."
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

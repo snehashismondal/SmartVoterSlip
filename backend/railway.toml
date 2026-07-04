@@ -1,0 +1,15 @@
+[build]
+builder = "NIXPACKS"
+buildCommand = "npm install"
+
+[deploy]
+startCommand = "npm start"
+healthcheckPath = "/api/ready"
+healthcheckTimeout = 30
+restartPolicyType = "ON_FAILURE"
+
+[env]
+NODE_ENV = "production"
+PORT = "5000"
+VOTERS_JSON_PATH = "./database/voters.json"
+VOTERLIST_PDF_PATH = "./pdf/voterlist.pdf"
